@@ -1,0 +1,24 @@
+theme = "dracula_at_night"
+
+[editor]
+mouse = false
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.auto-pairs]
+
+[editor.search]
+smart-case = false
+
+[keys.normal]
+"´"   = "switch_to_lowercase"
+"A-´" = "switch_to_uppercase"
+0 = "goto_line_start"
+
+[keys.insert]
+j = { k = "normal_mode" }
+k = { j = "normal_mode" }
+
