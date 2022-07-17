@@ -23,3 +23,6 @@ PS1='[\u@\h \W]\$ '
 
 # ghcup-env
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env"
+
+# elan
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.elan/env"
