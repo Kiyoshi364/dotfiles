@@ -83,7 +83,8 @@ set listchars=eol:§,tab:᚛→,trail:~,nbsp:☺
 """""" Helper files """"""
 " TODO: to search {
 " set noswapfile
-" set nobackup
+set backupdir=~/.vim/backup,~/.local/share/nvim/backup
+set backup
 set undodir=~/.vim/undodir
 set undofile
 " }
