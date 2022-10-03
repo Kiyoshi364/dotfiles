@@ -3,6 +3,7 @@
 #
 
 export sexe=$HOME/selfinstalled
+export zigstd=$sexe/zig/lib/std
 PATH=$sexe/bin:$PATH
 PATH+=:$HOME/.local/bin
 
