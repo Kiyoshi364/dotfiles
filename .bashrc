@@ -14,6 +14,8 @@ alias ls='ls --color=auto'
 alias la='ls -a --color=auto'
 alias ll='ls -la --color=auto'
 alias v='nvim'
+alias rm='mv -t /tmp/'
+alias urm='/bin/rm'
 PS1='[\u@\h \W]\$ '
 
 # If tty == 1, run sway
