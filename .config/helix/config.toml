@@ -14,9 +14,20 @@ select = "underline"
 smart-case = false
 
 [keys.normal]
-"´"   = "switch_to_lowercase"
-"A-´" = "switch_to_uppercase"
 0 = "goto_line_start"
+
+# Windows
+"A-q" = "wclose"
+
+"A-h" = "jump_view_left"
+"A-j" = "jump_view_down"
+"A-k" = "jump_view_up"
+"A-l" = "jump_view_right"
+
+"A-H" = "swap_view_left"
+"A-J" = "swap_view_down"
+"A-K" = "swap_view_up"
+"A-L" = "swap_view_right"
 
 [keys.insert]
 j = { k = "normal_mode" }
