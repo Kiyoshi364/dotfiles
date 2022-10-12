@@ -15,6 +15,9 @@ smart-case = false
 
 [keys.normal]
 0 = "goto_line_start"
+g = { s = "goto_line_start" }
+g = { h = "goto_first_nonwhitespace", s = "goto_line_start" }
+G = "goto_last_line"
 
 # Windows
 "A-q" = "wclose"
@@ -32,4 +35,3 @@ smart-case = false
 [keys.insert]
 j = { k = "normal_mode" }
 k = { j = "normal_mode" }
-
