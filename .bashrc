@@ -7,6 +7,12 @@ export zigstd=$sexe/zig/lib/std
 PATH=$sexe/bin:$PATH
 PATH+=:$HOME/.local/bin
 
+# XDG stuff
+export XDG_CONFIG_HOME="$HOME/.config/"
+
+# XKB stuff
+export XKB_DEFAULT_LAYOUT="br"
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
