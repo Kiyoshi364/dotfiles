@@ -4,14 +4,23 @@
 
 export sexe=$HOME/selfinstalled
 export zigstd=$sexe/zig/lib/std
-PATH=$sexe/bin:$PATH
-PATH+=:$HOME/.local/bin
 
 # XDG stuff
 export XDG_CONFIG_HOME="$HOME/.config/"
 
 # XKB stuff
 export XKB_DEFAULT_LAYOUT="br"
+
+# Devkit pro
+export DEVKITPRO=/opt/devkitpro
+export DEVKITARM=/opt/devkitpro/devkitARM
+export DEVKITPPC=/opt/devkitpro/devkitPPC
+
+# PATH
+PATH=$sexe/bin:$PATH
+PATH+=:$HOME/.local/bin
+PATH=$PATH:$DEVKITPRO/tools/bin
+PATH=$PATH:$DEVKITARM/bin
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
