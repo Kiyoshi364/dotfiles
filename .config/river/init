@@ -22,8 +22,8 @@ riverctl map normal Super+Shift Q close
 riverctl map normal Super+Shift E exit
 
 ### My stuff
-# Start launcher (TODO)
-riverctl map normal Super D spawn dmenu
+# Start launcher
+riverctl map normal Super D spawn "fuzzel --no-icons --terminal 'foot' --lines 25 --width 85 --background-color=282828f0 --text-color=ccccccff"
 
 # Start "Prowser" (vieb) (TODO)
 riverctl map normal Super P spawn vieb
