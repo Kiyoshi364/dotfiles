@@ -15,7 +15,6 @@ smart-case = false
 
 [keys.normal]
 0 = "goto_line_start"
-g = { s = "goto_line_start" }
 g = { h = "goto_first_nonwhitespace", s = "goto_line_start" }
 G = "goto_last_line"
 
