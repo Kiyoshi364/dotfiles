@@ -22,22 +22,25 @@ PATH+=:$HOME/.local/bin
 PATH=$PATH:$DEVKITPRO/tools/bin
 PATH=$PATH:$DEVKITARM/bin
 
+# EDITOR
+export EDITOR='hx'
+
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
 alias ls='ls --color=auto'
 alias la='ls -a --color=auto'
 alias ll='ls -la --color=auto'
-alias v='nvim'
+alias v=$EDITOR
 alias rm='mv -t /tmp/'
 alias urm='/bin/rm'
 PS1='[\u@\h \W]\$ '
 
-# If tty == 1, run sway
-[[ $(tty) = '/dev/tty1' ]] && sway
+# If tty == 1, run river
+[[ $(tty) = '/dev/tty1' ]] && river
 
 # If tty == 2, run sway
-[[ $(tty) = '/dev/tty2' ]] && river
+[[ $(tty) = '/dev/tty2' ]] && sway
 
 # dotfiles
 [ -f "$HOME/dotfiles/dotconfig.sh" ] && . "$HOME/dotfiles/dotconfig.sh"
