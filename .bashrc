@@ -40,7 +40,7 @@ PS1='[\u@\h \W]\$ '
 [[ $(tty) = '/dev/tty1' ]] && river
 
 # If tty == 2, run sway
-[[ $(tty) = '/dev/tty2' ]] && sway
+# [[ $(tty) = '/dev/tty2' ]] && sway
 
 # dotfiles
 [ -f "$HOME/dotfiles/dotconfig.sh" ] && . "$HOME/dotfiles/dotconfig.sh"
