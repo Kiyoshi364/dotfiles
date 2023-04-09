@@ -34,3 +34,8 @@ G = "goto_last_line"
 [keys.insert]
 j = { k = "normal_mode" }
 k = { j = "normal_mode" }
+
+[keys.select]
+0 = "goto_line_start"
+g = { h = "goto_first_nonwhitespace", s = "goto_line_start" }
+G = "goto_last_line"
