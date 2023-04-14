@@ -1,0 +1,8 @@
+[[language]]
+name = "toml"
+
+[[language]]
+name = "latex"
+indent = { tab-width = 4, unit = " " }
+
+[auto-pairs]

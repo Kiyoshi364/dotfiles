@@ -8,10 +8,53 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
+[editor.statusline]
+left = [
+  "mode",
+  "spinner",
+  "file-name",
+  "file-modification-indicator",
+]
+center = [
+  "primary-selection-length",
+  "selections",
+]
+right = [
+  "position",
+  "total-line-numbers",
+  "position-percentage",
+  "file-type",
+  "file-encoding",
+]
+
+[editor.file-picker]
+git-ignore = false
+
 [editor.auto-pairs]
 
 [editor.search]
 smart-case = false
+
+[editor.whitespace]
+render = "all"
+# space = "all"
+# newline = true
+
+[editor.whitespace.characters]
+space = " "
+nbsp = "☺"
+newline = "§"
+tab = "ᐅ"
+tabpad = "ᐊ"
+
+# " List of oels:ᚋ⨕
+# " List of tabs:ᐅᐊ᚛→←᚜
+# "tabs: 	  	 		eol
+# "nbsp: .
+# "trail:     
+# "white:      	 
+# " set listchars=eol:§,tab:<->,trail:~,nbsp:#
+
 
 [keys.normal]
 0 = "goto_line_start"
