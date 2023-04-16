@@ -5,4 +5,13 @@ name = "toml"
 name = "latex"
 indent = { tab-width = 4, unit = " " }
 
+[[language]]
+name = "j"
+scope = "source.j"
+file-types = [ "ijs" ]
+shebangs = [ "jconsole" ]
+roots = []
+comment-token = "NB."
+indent = { tab-width = 2, unit = "  " }
+
 [auto-pairs]
