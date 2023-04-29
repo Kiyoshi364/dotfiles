@@ -2,6 +2,14 @@
 name = "toml"
 
 [[language]]
+name = "c"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "haskell"
+indent = { tab-width = 4, unit = "    " }
+
+[[language]]
 name = "latex"
 indent = { tab-width = 4, unit = " " }
 
@@ -13,5 +21,13 @@ shebangs = [ "jconsole" ]
 roots = []
 comment-token = "NB."
 indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "steight"
+scope = "source.steight"
+file-types = [ "sth" ]
+roots = []
+comment-token = "//"
+indent = { tab-width = 4, unit = "    " }
 
 [auto-pairs]

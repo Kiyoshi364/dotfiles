@@ -29,6 +29,7 @@ right = [
 
 [editor.file-picker]
 git-ignore = false
+git-exclude = false
 
 [editor.auto-pairs]
 
