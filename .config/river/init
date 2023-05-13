@@ -38,8 +38,8 @@ riverctl map normal Super+Control H spawn "foot -- htop"
 # Super+J and Super+K to focus the next/previous view in the layout stack
 riverctl map normal Super J focus-view next
 riverctl map normal Super K focus-view previous
-riverctl map normal Super L focus-view next
-riverctl map normal Super H focus-view previous
+riverctl map normal Super L focus-view previous
+riverctl map normal Super H focus-view next
 riverctl map normal Super Up    focus-view next
 riverctl map normal Super Right focus-view previous
 riverctl map normal Super Down  focus-view previous
