@@ -34,6 +34,13 @@ alias ll='ls -la --color=auto'
 alias v=$EDITOR
 alias rm='mv -t /tmp/'
 alias urm='/bin/rm'
+
+alias ns='/nix/var/nix/profiles/default/bin/nix-shell --pure'
+alias nd='/nix/var/nix/profiles/default/bin/nix develop'
+function ndi() {
+  nd -i $@ --command $SHELL --norc
+}
+
 PS1='[\u@\h \W]\$ '
 
 # If tty == 1, run river
