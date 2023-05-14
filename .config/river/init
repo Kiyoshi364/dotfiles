@@ -11,6 +11,8 @@
 # Say that I'm using river
 # WebRTC (screen sharing) uses that
 export XDG_CURRENT_DESKTOP='river'
+systemctl --user import-environment WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 
