@@ -16,6 +16,11 @@ dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 
+
+# bindsym $mod+Ctrl+4 exec swaylock -f -c 410056 && systemctl suspend
+riverctl map normal Super+Alt 4 spawn "systemctl suspend && swaylock -f -c 410056"
+riverctl map normal Super+Alt 8 spawn "systemctl hybrid-sleep && swaylock -f -c 410056"
+
 # Super+Shift+Return to start an instance of foot (https://codeberg.org/dnkl/foot)
 riverctl map normal Super T spawn foot
 riverctl map normal Super KP_Enter spawn foot
