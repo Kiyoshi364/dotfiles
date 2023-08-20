@@ -107,6 +107,9 @@ riverctl map-pointer normal Super BTN_LEFT move-view
 # Super + Right Mouse Button to resize views
 riverctl map-pointer normal Super BTN_RIGHT resize-view
 
+# Super + Middle Mouse Button to toggle float
+riverctl map-pointer normal Super BTN_MIDDLE toggle-float
+
 for i in $(seq 1 9)
 do
     tags=$((1 << ($i - 1)))
@@ -117,10 +120,10 @@ do
     # Super+Shift+[1-9] to tag focused view with tag [0-8]
     riverctl map normal Super+Shift $i set-view-tags $tags
 
-    # Super+Ctrl+[1-9] to toggle focus of tag [0-8]
+    # Super+Control+[1-9] to toggle focus of tag [0-8]
     riverctl map normal Super+Control $i toggle-focused-tags $tags
 
-    # Super+Shift+Ctrl+[1-9] to toggle tag [0-8] of focused view
+    # Super+Shift+Control+[1-9] to toggle tag [0-8] of focused view
     riverctl map normal Super+Shift+Control $i toggle-view-tags $tags
 done
 
@@ -183,12 +186,11 @@ riverctl border-color-unfocused 0x586e75
 # Set keyboard repeat rate
 riverctl set-repeat 50 300
 
-# Make certain views start floating
-riverctl float-filter-add app-id float
-riverctl float-filter-add title "popup title with spaces"
+# Make all views with an app-id that starts with "float" and title "foo" start floating.
+riverctl rule-add float -app-id 'float*' -title 'foo'
 
-# Set app-ids and titles of views which should use client side decorations
-riverctl csd-filter-add app-id "gedit"
+# Make all views with app-id "bar" and any title use client-side decorations
+riverctl rule-add csd -app-id "bar"
 
 # Waybar
 riverctl spawn waybar
