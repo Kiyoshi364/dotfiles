@@ -16,11 +16,6 @@ dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
 
 # Note: the "Super" modifier is also known as Logo, GUI, Windows, Mod4, etc.
 
-# Sound
-riverctl map normal Super F1 spawn "amixer sset Master toggle"
-riverctl map normal Super F2 spawn "amixer sset Master 5%-"
-riverctl map normal Super F3 spawn "amixer sset Master 5%+"
-
 # bindsym $mod+Ctrl+4 exec swaylock -f -c 410056 && systemctl suspend
 riverctl map normal Super+Alt 4 spawn "systemctl suspend && swaylock -f -c 410056"
 riverctl map normal Super+Alt 8 spawn "systemctl hybrid-sleep && swaylock -f -c 410056"
@@ -163,9 +158,14 @@ do
     riverctl map $mode None XF86Eject spawn 'eject -T'
 
     # Control pulse audio volume with pamixer (https://github.com/cdemoulins/pamixer)
-    riverctl map $mode None XF86AudioRaiseVolume  spawn 'pamixer -i 5'
-    riverctl map $mode None XF86AudioLowerVolume  spawn 'pamixer -d 5'
-    riverctl map $mode None XF86AudioMute         spawn 'pamixer --toggle-mute'
+    riverctl map $mode Super F1                   spawn 'amixer -q sset Master toggle'
+    riverctl map $mode Super F2                   spawn 'amixer -q sset Master 5%-'
+    riverctl map $mode Super F3                   spawn 'amixer -q sset Master 5%+'
+
+    # For some reason key 'XF86AudioRaiseVolume' does not work
+    riverctl map $mode None XF86AudioRaiseVolume  spawn 'amixer -q sset Master 5%+'
+    riverctl map $mode None XF86AudioLowerVolume  spawn 'amixer -q sset Master 5%-'
+    riverctl map $mode None XF86AudioMute         spawn 'amixer -q sset Master toggle'
 
     # Control MPRIS aware media players with playerctl (https://github.com/altdesktop/playerctl)
     riverctl map $mode None XF86AudioMedia spawn 'playerctl play-pause'
