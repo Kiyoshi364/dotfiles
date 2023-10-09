@@ -23,6 +23,14 @@ comment-token = "NB."
 indent = { tab-width = 2, unit = "  " }
 
 [[language]]
+name = "uiua"
+scope = "source.uiua"
+file-types = [ "ua" ]
+roots = []
+comment-token = "#"
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
 name = "steight"
 scope = "source.steight"
 file-types = [ "sth" ]
