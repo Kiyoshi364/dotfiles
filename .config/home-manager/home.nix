@@ -10,6 +10,7 @@
     sessionPath = [
       "${config.home.sessionVariables.sexe}/bin"
       "$HOME/.local/bin"
+      "$HOME/code/cutils/outbin"
     ];
 
     sessionVariables = {
