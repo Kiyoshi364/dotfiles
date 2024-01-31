@@ -56,6 +56,8 @@
           nd -i $@ --command $SHELL --norc
         }
 
+        [ -f "$HOME/.prompt.sh" ] && . "$HOME/.prompt.sh"
+
         [[ $(tty) = '/dev/tty1' ]] && river
 
         [ -f "$HOME/dotfiles/dotconfig.sh" ] && . "$HOME/dotfiles/dotconfig.sh"
