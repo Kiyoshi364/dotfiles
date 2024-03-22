@@ -38,4 +38,12 @@ roots = []
 comment-token = "//"
 indent = { tab-width = 4, unit = "    " }
 
+[[language]]
+name = "coq"
+scope = "source.coq"
+file-types = [ "v" ]
+roots = []
+comment-token = ""
+indent = { tab-width = 2, unit = "  " }
+
 [auto-pairs]
