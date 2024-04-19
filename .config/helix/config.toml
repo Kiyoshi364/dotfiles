@@ -63,6 +63,7 @@ enable = false
 0 = "goto_line_start"
 g = { h = "goto_first_nonwhitespace", s = "goto_line_start" }
 G = "goto_last_line"
+z = { g = "align_view_top" }
 
 # Windows
 "A-q" = "wclose"
