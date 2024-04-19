@@ -14,6 +14,10 @@ name = "latex"
 indent = { tab-width = 4, unit = "    " }
 
 [[language]]
+name = "racket"
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
 name = "j"
 scope = "source.j"
 file-types = [ "ijs" ]
@@ -44,6 +48,14 @@ scope = "source.coq"
 file-types = [ "v" ]
 roots = []
 comment-token = ""
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
+name = "netlogo"
+scope = "source.netlogo"
+file-types = [ "nlogo", "netlogo" ]
+roots = []
+comment-token = ";;"
 indent = { tab-width = 2, unit = "  " }
 
 [auto-pairs]
