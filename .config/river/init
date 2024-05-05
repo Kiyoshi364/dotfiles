@@ -39,6 +39,10 @@ riverctl map normal Super D spawn "fuzzel --no-icons --terminal 'foot' --lines 2
 # Start "Prowser" (vieb) (TODO)
 riverctl map normal Super P spawn vieb
 
+# Print Screen
+riverctl map normal Super+Shift S spawn "slurp | grim -g - - | wl-copy"
+riverctl map normal Super+Shift P spawn "grim - | wl-copy"
+
 # Start a htop
 riverctl map normal Super+Control H spawn "foot -- htop"
 
