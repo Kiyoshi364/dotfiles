@@ -46,6 +46,9 @@ riverctl map normal Super+Shift P spawn "grim - | wl-copy"
 # Start a htop
 riverctl map normal Super+Control H spawn "foot -- htop"
 
+# Hack over "Netflix Button"
+riverctl map normal Super R spawn "foot -- $EDITOR"
+
 # Super+J and Super+K to focus the next/previous view in the layout stack
 riverctl map normal Super J focus-view next
 riverctl map normal Super K focus-view previous
