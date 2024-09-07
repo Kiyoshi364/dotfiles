@@ -40,6 +40,7 @@ riverctl map normal Super D spawn "fuzzel --no-icons --terminal 'foot' --lines 2
 riverctl map normal Super P spawn vieb
 
 # Print Screen
+riverctl map normal Super+Alt+Shift S spawn 'slurp | grim -g - $(date +"$HOME/grim-out/%Y%m%d_%Hh%Mm%Ss_grim.png")'
 riverctl map normal Super+Shift S spawn "slurp | grim -g - - | wl-copy"
 riverctl map normal Super+Shift P spawn "grim - | wl-copy"
 
