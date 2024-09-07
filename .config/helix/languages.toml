@@ -18,6 +18,10 @@ name = "racket"
 indent = { tab-width = 2, unit = "  " }
 
 [[language]]
+name = "prolog"
+indent = { tab-width = 2, unit = "  " }
+
+[[language]]
 name = "j"
 scope = "source.j"
 file-types = [ "ijs" ]
