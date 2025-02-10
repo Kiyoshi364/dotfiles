@@ -3,6 +3,9 @@ theme = "dracula_at_night"
 [editor]
 mouse = false
 auto-pairs = false
+path-completion = false
+auto-format = false
+bufferline = "multiple"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -30,6 +33,7 @@ right = [
 
 [editor.file-picker]
 git-ignore = false
+git-global = false
 git-exclude = false
 
 [editor.search]
