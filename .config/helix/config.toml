@@ -68,6 +68,10 @@ g = { h = "goto_first_nonwhitespace", s = "goto_line_start" }
 G = "goto_last_line"
 z = { g = "align_view_top" }
 
+# Search
+"*" = "search_selection"
+"A-*" = "search_selection_detect_word_boundaries"
+
 # Windows
 "A-q" = "wclose"
 
