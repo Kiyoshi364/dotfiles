@@ -17,6 +17,7 @@
       HOME = config.home.homeDirectory;
       sexe = "${config.home.sessionVariables.HOME}/selfinstalled";
       zigstd = "${config.home.sessionVariables.sexe}/zig/lib/std";
+      pllib = "${config.home.sessionVariables.sexe}/scryer-prolog/src/lib";
 
       EDITOR = "hx";
 
