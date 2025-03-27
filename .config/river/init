@@ -41,6 +41,7 @@ riverctl map normal Super P spawn vieb
 
 # Print Screen
 riverctl map normal Super+Alt+Shift S spawn 'slurp | grim -g - $(date +"$HOME/grim-out/%Y%m%d_%Hh%Mm%Ss_grim.png")'
+riverctl map normal Super+Alt+Shift P spawn 'grim - $(date +"$HOME/grim-out/%Y%m%d_%Hh%Mm%Ss_grim.png")'
 riverctl map normal Super+Shift S spawn "slurp | grim -g - - | wl-copy"
 riverctl map normal Super+Shift P spawn "grim - | wl-copy"
 
